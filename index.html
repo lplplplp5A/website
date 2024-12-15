@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πλήρης Ιστοσελίδα</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background-image.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #f1f1f1;
+            line-height: 1.8;
+        }
+        header {
+            background: linear-gradient(to right, #990000, #660000);
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #f1f1f1;
+            padding: 12px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+        }
+        nav a:hover {
+            background-color: #990000;
+            color: white;
+            transform: scale(1.1);
+        }
+        main {
+            padding: 60px;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: rgba(30, 30, 30, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+        }
+        button {
+            display: block;
+            padding: 18px 35px;
+            font-size: 18px;
+            margin: 30px auto;
+            cursor: pointer;
+            background-color: #990000;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #660000;
+            transform: scale(1.1);
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 0;
+            color: #990000;
+        }
+        p {
+            font-size: 1.2em;
+            color: #d3d3d3;
+        }
+        .slider {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .slider img {
+            width: 100%;
+            display: block;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 1.5%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .form-container {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+        }
+        .form-container button {
+            width: 100%;
+        }
+        .map {
+            margin-top: 20px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .news {
+            margin-top: 50px;
+        }
+        .news article {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .news article:hover {
+            transform: scale(1.02);
+        }
+        .news article h3 {
+            color: #ffcc00;
+        }
+        .news article p {
+            color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Καλώς ήρθατε στην ιστοσελίδα μου</h1>
+    </header>
+    <nav>
+        <a href="#home">Αρχική</a>
+        <a href="#about">Σχετικά</a>
+        <a href="#services">Υπηρεσίες</a>
+        <a href="#gallery">Συλλογή</a>
+        <a href="#contact">Επικοινωνία</a>
+        <a href="#news">Νέα</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Αρχική</h2>
+            <div class="slider">
+                <img src="https://via.placeholder.com/1200x400" alt="Slider Image 1">
+                <img src="https://via.placeholder.com/1200x400" alt="Slider Image 2">
+            </div>
+        </section>
+        <section id="about">
+            <h2>Σχετικά</h2>
+            <p>Πληροφορίες σχετικά με την ιστοσελίδα σας ή την επιχείρησή σας.</p>
+        </section>
+        <section id="services">
+            <h2>Υπηρεσίες</h2>
+            <p>Εδώ μπορείτε να περιγράψετε τις υπηρεσίες που προσφέρετε.</p>
+        </section>
+        <section id="gallery">
+            <h2>Συλλογή</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/600x400" alt="Gallery Image 1">
+                <img src="https://via.placeholder.com/600x400" alt="Gallery Image 2">
+                <img src="https://via.placeholder.com/600x400" alt="Gallery Image 3">
+            </div>
+        </section>
+        <section id="news">
+            <h2>Νέα</h2>
+            <div class="news">
+                <article>
+                    <article>
+    <h3>Νέος Τίτλος Άρθρου</h3>
+    <p>Εδώ προσθέτεις τη δική σου περιγραφή ή περιεχόμενο για το νέο άρθρο.</p>
+</article>
+<h3>Τίτλος Άρθρου 1</h3>
+                    <p>Περιγραφή του πρώτου άρθρου με σύντομο κείμενο.</p>
+                </article>
+                <article>
+                    <h3>Τίτλος Άρθρου 2</h3>
+                    <p>Περιγραφή του δεύτερου άρθρου με περισσότερες λεπτομέρειες.</p>
+                </article>
+                <article>
+                    <h3>Προσθέστε το δικό σας άρθρο</h3>
+                    <p>Αντικαταστήστε αυτό το κείμενο με το περιεχόμενο που θέλετε να προσθέσετε.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Επικοινωνία</h2>
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="Όνομα" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Μήνυμα" rows="5" required></textarea>
+                    <button type="submit">Υποβολή</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Η Ιστοσελίδα μου. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+    </footer>
+</body>
+</html>
